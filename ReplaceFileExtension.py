@@ -21,11 +21,11 @@ def replaceFileExt(fileName: str, newExtension: str) -> str:
 
 if __name__ == '__main__':
 
-    f = ('', '.', '.ext', 'filename', 'filename.', 'filename.ext', 'file.name.ext')
-    e = ('', '.', 'txt', '.txt', 'txt.csv', '.txt.csv')
+    filenames = ('', '.', '.ext', 'filename', 'filename.', 'filename.ext', 'file.name.ext')
+    extensions = ('', '.', 'txt', '.txt', 'txt.csv', '.txt.csv')
 
-    for i in f:
+    for filename in filenames:
         print()
 
-        for j in e:
-            print(replaceFileExt(i, j))
+        for extension in extensions:
+            print(replaceFileExt(filename, extension))
